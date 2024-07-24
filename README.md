@@ -57,7 +57,8 @@
 1. Configure o banco de dados PostgreSQL:
     - (local) Crie um banco de dados e atualize as informações de conexão no arquivo `.env`.
     - (docker) execute o comando:
-        ```bash
+
+    ```bash
     docker-compose up
     ```
 
