@@ -74,7 +74,7 @@
     python desafio_crud/main.py
     ```
 
-2. [*opcional*](Poetry) Execute os testes:
+2. (*opcional*)Execute os testes:
     ```bash
     task test
     ```
