@@ -20,6 +20,7 @@
     ```
 
 ## venv
+
 1. Crie um ambiente virtual:
     ```bash
     python -m venv venv
@@ -40,9 +41,6 @@
     pip install -r requirements.txt
     ```
 
-5. Configure o banco de dados PostgreSQL:
-    - Crie um banco de dados e atualize as informações de conexão no arquivo `.env`.
-
 ## Poetry
 
 1. Instale as dependencias:
@@ -55,12 +53,15 @@
     poetry shell
     ```
 
-## Execução
-
-1. (Docker) Execute o comando para subir os conteineres (app, postgres e pgadmin)
-    ```bash
+## Banco de dados
+1. Configure o banco de dados PostgreSQL:
+    - (local) Crie um banco de dados e atualize as informações de conexão no arquivo `.env`.
+    - (docker) execute o comando:
+        ```bash
     docker-compose up
     ```
+
+## Execução
 
 1. (venv) Execute o script para criar as tabelas e rodar comandos CRUD:
     ```bash
@@ -72,7 +73,7 @@
     python desafio_crud/main.py
     ```
 
-2. (Poetry) Execute os testes:
+2. [*opcional*](Poetry) Execute os testes:
     ```bash
     task test
     ```
